@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 const host = process.env.DB_HOST || '127.0.0.1';
-const dbURI = `mongodb://${host}/travlr`;
+const dbURI = `mongodb://${host}:27017/travlr`;
 const readLine = require('readline');
 
 mongoose.set('useUnifiedTopology', true);
 
 const connect = () => {
     setTimeout(() => mongoose.connect(dbURI, {
-        nuseNewUrlParser: true,
+        useNewUrlParser: true,
         useCreateIndex: true
     }), 1000);
 }
