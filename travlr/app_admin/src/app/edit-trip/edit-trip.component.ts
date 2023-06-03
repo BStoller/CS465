@@ -51,7 +51,6 @@ export class EditTripComponent implements OnInit {
     });
   }
   onSubmit() {
-    debugger;
     this.submitted = true;
     if (this.editForm.valid) {
       this.tripService.updateTrip(this.editForm.value).then((data) => {
