@@ -64,9 +64,10 @@ const tripsFindByCode = async (req, res) => {
 }
 
 const tripsUpdateTrip = async (req, res) => {
+    console.log(req.params.tripCode)
     console.log(req.body);
     model
-        .findOneAndUpdate({'code': req.params.tripCode}. {
+        .findOneAndUpdate({'code': req.params.tripCode}, {
             code: req.body.code,
             name: req.body.name,
             length: req.body.length,
