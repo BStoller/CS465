@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-router.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditTripComponent } from './edit-trip/edit-trip.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     TripCardComponent,
     AddTripComponent,
     EditTripComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
